@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Special Proposal for Putri</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body onload="startProposal()">
+    <div class="container">
+        <!-- Buildup Section -->
+        <div id="buildup-section" class="section active">
+            <h1 id="buildup-title"></h1>
+            <p id="buildup-text"></p>
+            <button onclick="showQuestion()" id="question-button" style="display: none;">Will you marry me?</button>
+        </div>
+
+        <!-- Question Section -->
+        <div id="question-section" class="section">
+            <h1 id="question-title"></h1>
+            <button onclick="answer('yes')">Yes</button>
+            <button onclick="answer('no')">No</button>
+        </div>
+
+        <!-- Response Section -->
+        <div id="response-section" class="section">
+            <h1 id="response-title">Her Answer</h1>
+            <pre id="response-text"></pre>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
